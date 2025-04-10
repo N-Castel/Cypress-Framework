@@ -24,7 +24,7 @@ describe('Test de assertion', () => {
         //cy.wait(4000) Use in case that the control takes some time to be displayed in the UI
         cy.get('[data-testid="header-container"] > .sc-duWCru > .sc-cHqXqK > :nth-child(3) > .sc-iuUfFv').should('be.visible') // Validate elemet is visible in the UI
     });
-/*
+
     it('The element is not vivisble', () => {
         cy.get('[data-testid="header-container"] > .sc-duWCru > .sc-cHqXqK > :nth-child(3) > .sc-iuUfFv').should('not.be.visible') // Validate elemet is not visible in the UI
     });
@@ -44,5 +44,5 @@ describe('Test de assertion', () => {
     it('The element is disabled', () => {
         cy.get('checkbox element').should('be.disabled');
     })
-*/ 
+
 })
