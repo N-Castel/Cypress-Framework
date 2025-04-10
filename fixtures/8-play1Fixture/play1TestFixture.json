@@ -1,0 +1,38 @@
+[
+    {
+        "play1GroundTitle": "The Test Automation Playground",
+        "play1GroundSubtitle": "The Playground",
+        "play1GroundSubtitle1": "Application Under Test",
+        "whatIsPlayGround": "What is Playground?",
+        "availablePages": "Available Pages",
+    
+        "waitConditions": "Wait Conditions",
+        "minWait": 3,
+        "maxWait": 5,
+        "waitToBePresent": "Wait for alert to be present",
+        "waitForElementToBePresent": "Wait for alert to be present",
+        "waitForElementToBeVisible": "Wait for element to be visible",
+        "canYouSeeMe": "Can you see me?", 
+        "iJustRemoved": "I just removed my invisibility cloak!!",
+        "waitForElementToBeInvisible": "Wait for element to be Invisible",
+        "spinnerGone": "Thank God that spinner is gone!",
+        "classBtnDanger": "btn btn-danger",
+        "classBtnSuccess": "btn btn-success",
+
+        "waitPageTitleChange": "Wait for Page Title to change",
+        "myNewTittle": "My New Title!",
+
+        "inputWaitTextChangeValueDefault": "",
+        "inputWaitTextChangeValueChanged": "NTest",
+    
+        "haveAttribute": "have.attr",
+        "class": "class",
+        "haveText": "have.text",
+        "contain": "contain",
+        "visible": "be.visible",
+        "notVisible": "not.be.visible",
+        "notContainText": "not.contain.text",
+        "notHaveText": "not.have.text"
+        
+    }
+]

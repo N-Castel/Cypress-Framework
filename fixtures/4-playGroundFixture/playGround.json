@@ -1,0 +1,12 @@
+[
+{
+    "dynamicIdLabel": "Dynamic ID",
+    "dinamycIdButtonLabel": "Button with Dynamic ID",
+    "loadDelaysTtitle": "Load Delays",
+    "loadDeladylabel": "Load Delay",
+    "primaryButtonPressedText": "Primary button pressed", 
+    "successMessageClientSide": "Data calculated on the client side.",
+    "NotsuccessMessageClientSide": "Data calculated on the client side."
+
+}
+]
