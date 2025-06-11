@@ -5,6 +5,7 @@
         "play1GroundSubtitle1": "Application Under Test",
         "whatIsPlayGround": "What is Playground?",
         "availablePages": "Available Pages",
+        "meta": "Meta",
     
         "waitConditions": "Wait Conditions",
         "minWait": 3,
@@ -24,11 +25,15 @@
 
         "inputWaitTextChangeValueDefault": "",
         "inputWaitTextChangeValueChanged": "NTest",
+
+        "keayboardActionsTitle": "Keyboard Actions",
+        "keyboardDesc": "Try various Keyboard actions", 
     
         "haveAttribute": "have.attr",
         "class": "class",
         "haveText": "have.text",
         "contain": "contain",
+        "includeText": "include.text",
         "visible": "be.visible",
         "notVisible": "not.be.visible",
         "notContainText": "not.contain.text",
