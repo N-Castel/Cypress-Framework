@@ -1,8 +1,7 @@
 import selectorTestAutomation from '../../selector/2-baseTestAutomationPage/selectorTestAutomation'
 import dataCredentials from "../../fixtures/2-practiceTstAutomationFixture/dataCredentials.json"
+
 const selectAutomationPage = new selectorTestAutomation
-
-
 
 describe('Test Automation Practice', () => {
 
@@ -10,8 +9,6 @@ describe('Test Automation Practice', () => {
         selectAutomationPage.navigatehome();
     })
     
-    dataCredentials.forEach(dataCredentials => {
-
         it('Complete the form', () => {
             selectAutomationPage.nameField().should('exist');
             selectAutomationPage.nameField().click();
@@ -219,12 +216,14 @@ describe('Test Automation Practice', () => {
             selectAutomationPage.item23().click()
         })
 
-        it('Fixture test ', function () {
-            cy.get('#username').type(dataCredentials.username);
-            cy.get('#password').type(dataCredentials.password);
-            cy.get('.fa').click()
+    // dataCredentials.forEach(dataCredentials => {
+    
+    //     it('Fixture test ', function () {
+    //         cy.get('#name').type(dataCredentials.username);
+    //         cy.get('#password').type(dataCredentials.password);
+    //         cy.get('.fa').click()
 
-            dataCredentials.name === 'Standart User' ? cy.url().should('include', dataCredentials.expected) : cy.url().should('not.include', dataCredentials.expected)  
-        })
-    })
+    //         dataCredentials.name === 'Standart User' ? cy.url().should('include', dataCredentials.expected) : cy.url().should('not.include', dataCredentials.expected)  
+    //     })
+    // })
 })

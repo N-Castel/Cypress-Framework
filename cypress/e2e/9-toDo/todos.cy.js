@@ -1,5 +1,5 @@
 import selectorToDoTodo from "../../selector/9-Todo/selectorToDo"
-import todos from "../../../fixtures/9-ToDo/todos.json"
+import todos from "../../fixtures/9-ToDo/todos.json"
 
 const baseTodoPage = new selectorToDoTodo 
 

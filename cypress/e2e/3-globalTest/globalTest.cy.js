@@ -1,4 +1,4 @@
-import selectorGlobalBasePage from "../../../selector/3-globalBasePage/selectorGlobalBase";
+import selectorGlobalBasePage from "../../selector/3-globalBasePage/selectorGlobalBase";
 
 const globalBase = new selectorGlobalBasePage
 
