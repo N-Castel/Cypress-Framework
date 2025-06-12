@@ -14,8 +14,17 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on);
-      return config;
-    }
-  }
-});
+      on('after:run', (results) => {
+        if (results) {
+          // results will be undefined in interactive mode
+          console.log(
+            results.totalPassed,
+            'out of',
+            results.totalTests,
+            'passed'
+          )
+        }
+      })
+    },
+  },
+})

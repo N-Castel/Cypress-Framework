@@ -69,7 +69,6 @@ Cypress.Commands.add('visitInSameTab', (url) => {
     }
 })
 
-
 // to fix error when navigating demoQA
 
 Cypress.on('uncaught:exception', (err, runnable) => {
@@ -82,6 +81,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     cy.visit('https://demoqa.com/automation-practice-form')
   })
 
+// complete form with required fields
 
 Cypress.Commands.add('fillForm', (userdata) => {
     selectorDemoQA.firstNameInput().type(userdata.name)
@@ -92,6 +92,7 @@ Cypress.Commands.add('fillForm', (userdata) => {
 
   })
 
+//complete form with ALL fields
 
 Cypress.Commands.add('fillOutForm', (dataAll) => {
     selectorDemoQA.firstNameInput().type(dataAll.name)
