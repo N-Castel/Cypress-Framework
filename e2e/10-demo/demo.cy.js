@@ -1,5 +1,5 @@
-import selectorDemo from "../../../selector/10-demo/selectorDemo"
-import demoFixture from "../../../fixtures/10-demo/demoFixture.json"
+import selectorDemo from "../../selector/10-demo/selectorDemo"
+import demoFixture from "../../fixtures/10-demo/demoFixture.json"
 
 const demoSelector = new selectorDemo
 
