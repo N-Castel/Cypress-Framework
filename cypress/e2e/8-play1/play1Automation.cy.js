@@ -1,7 +1,7 @@
-import basePlay1Automation from "../../../selector/8-basePlay1/basePlay1Automation";
-import play1TestFixture from "../../../fixtures/8-play1Fixture/play1TestFixture.json"
+import selectorPlay1Automation from "../../selector/8-basePlay1/selectorPlay1Automation";
+import play1TestFixture from "../../fixtures/8-play1Fixture/play1TestFixture.json"
 
-const basePlay1AutomationPage = new basePlay1Automation 
+const basePlay1AutomationPage = new selectorPlay1Automation 
 
 describe('Play1 Automation test', () => {
 

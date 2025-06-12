@@ -1,8 +1,7 @@
-import basePlayGroundPage from "../../../selector/4-basePlayGroundPage/selectorUITestingPlayGround"
+import selectorUITestingPlayGround from "../../selector/4-basePlayGroundPage/selectorUITestingPlayGround"
+import playGroundFixture from "../../fixtures/4-playGroundFixture/playGround.json"
 
-const playGroundFixture = require ('../../../fixtures/4-playGroundFixture/playGround.json')
-
-const playGroundPage = new basePlayGroundPage
+const playGroundPage = new selectorUITestingPlayGround
 
 
 describe('UI Test Autoation Playground', () => {

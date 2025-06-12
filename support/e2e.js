@@ -20,13 +20,18 @@ import 'cypress-mochawesome-reporter/register'
 require('cypress-xpath')
 
 module.exports = (on, config) => {
-    on('task', {
-      logMessage (message) {
-        console.log(message);
-        return null;
-      },
-      calculateSum (a, b) {
-        return a + b;
-      }
-    });
-  };
+  on('task', {
+    logMessage (message) {
+      console.log(message);
+      return null;
+    },
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports',
+      overwrite: false,
+      html: true,
+      json: true,
+      timestamp: 'mmddyyyy_HHMMss'
+    }
+  });
+};

@@ -1,8 +1,9 @@
-import baseAmazonPage from "../../../selector/7-amazonPage/selectorAmazon";
+import selectorAmazon from "../../selector/7-amazonPage/selectorAmazon";
+import amazonFixtureData from "../../fixtures/7-amazonFixture/amazonFixture.json"
 
 const amazonFixtureData = require ("../../../fixtures/7-amazonFixture/amazonFixture.json")
 
-const baseAmazon = new baseAmazonPage
+const baseAmazon = new selectorAmazon
 
 describe('Amazon Test', () => {
 

@@ -1,6 +1,6 @@
-import globalBasePage from "../../../selector/3-globalBasePage/selectorGlobalBase";
+import selectorGlobalBasePage from "../../../selector/3-globalBasePage/selectorGlobalBase";
 
-const globalBase = new globalBasePage
+const globalBase = new selectorGlobalBasePage
 
 describe('Automation test Global Logic', () => {
 

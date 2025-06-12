@@ -1,7 +1,7 @@
-import pageTodo from "../../../selector/9-Todo/selectorToDo"
+import selectorToDoTodo from "../../selector/9-Todo/selectorToDo"
 import todos from "../../../fixtures/9-ToDo/todos.json"
 
-const baseTodoPage = new pageTodo 
+const baseTodoPage = new selectorToDoTodo 
 
 describe('To Do Test ', () => {
 

@@ -1,8 +1,7 @@
-import baseNioPage from "../../../selector/6-intelliflo/selectorIntellifloPage";
+import selectorIntellifloPage from "../../selector/6-intelliflo/selectorIntellifloPage";
+import ioFixture from "../../fixtures/6-IOFixture/ioFixture.json"
 
-const ioFixture = require ("../../../fixtures/6-IOFixture/ioFixture.json")
-
-const baseIOPage = new baseNioPage
+const baseIOPage = new selectorIntellifloPage
 
 describe('Intelliflo Test', () => {
 
