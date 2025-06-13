@@ -87,6 +87,70 @@ class selectorDemoQA {
     headerThanksSubmitting(){
         return cy.get('div.modal-header')
     }
+
+    //Tables
+
+    elementButton(){
+        return cy.get(':nth-child(1) > .group-header > .header-wrapper > .header-text')
+    }
+
+    tableButton(){
+        return cy.get(':nth-child(1) > .element-list > .menu-list > #item-3')
+    }
+
+    tableTitle(){
+        return cy.get('.text-center')
+    }
+
+    webtable(){
+        return cy.get('.ReactTable')
+    }
+
+    //Registration Form
+
+    addbutton(){
+        return cy.get('#addNewRecordButton')
+    }
+
+    firstNameForm(){
+        return cy.get('#firstName')
+    }
+
+    lastNameForm(){
+        return cy.get('#lastName')
+    }
+
+    emailForm(){
+        return cy.get('#userEmail')
+    }
+
+    edadForm(){
+        return cy.get('#age')
+    }
+
+    salaryForm(){
+        return cy.get('#salary')
+    }
+    
+    department(){
+        return cy.get('#department')
+    }
+
+    submitFormButton(){
+        return cy.get('#submit')
+    }
+
+    uploadDownloadButton(){
+        return cy.get(':nth-child(1) > .element-list > .menu-list > #item-7')
+    }
+
+    uploadButton(){
+        return cy.get('#uploadFile')
+    }
+
+    pathUploadedFile(){
+        return cy.get('#uploadedFilePath')
+    }
 }
 
 export default selectorDemoQA

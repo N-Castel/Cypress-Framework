@@ -25,8 +25,15 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import selectDemoQA from "../selector/10-demo/selectorDemo"
+import 'cypress-file-upload'
 
 const selectorDemoQA = new selectDemoQA
+
+//Visit demoQA Website
+
+Cypress.Commands.add('visitDemoQA', () => {
+    cy.visit('https://demoqa.com/automation-practice-form')
+})
 
 //To look a field that is hide in the frame
 Cypress.Commands.add('iframe', {prevSubject: 'element'}, ($iframe, selector) => {
@@ -112,3 +119,35 @@ Cypress.Commands.add('fillOutForm', (dataAll) => {
     selectorDemoQA.selectCityDropdownItem().click()
     selectorDemoQA.submitButton().click()
 })
+
+
+// go Web tables
+
+Cypress.Commands.add('Webtables', () => {
+    selectorDemoQA.elementButton().click()
+    selectorDemoQA.tableButton().click()
+})
+
+
+//complete form to add new table
+
+Cypress.Commands.add('completeAllFormFields', (dataForm) => {
+    selectorDemoQA.addbutton().click()
+    selectorDemoQA.firstNameForm().type(dataForm.name)
+    selectorDemoQA.lastNameForm().type(dataForm.lastname)
+    selectorDemoQA.emailForm().type(dataForm.email)
+    selectorDemoQA.edadForm().type(dataForm.age)
+    selectorDemoQA.salaryForm().type(dataForm.salary)
+    selectorDemoQA.department().type(dataForm.department)
+    selectorDemoQA.submitFormButton().click()
+})
+
+
+//Go to upload files 
+
+Cypress.Commands.add('uploadFiles', (file) => {
+    selectorDemoQA.elementButton().click()
+    selectorDemoQA.uploadDownloadButton().click()
+    selectorDemoQA.uploadButton().attachFile(file)
+})
+

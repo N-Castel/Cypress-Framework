@@ -6,7 +6,7 @@ const demoSelector = new selectorDemo
 describe('demoQA Test', () => {
 
     beforeEach(() => {
-        cy.visit('https://demoqa.com/automation-practice-form')
+        cy.visitDemoQA()
     })
 
     demoFixture.forEach(demoFixture => {
@@ -63,6 +63,42 @@ describe('demoQA Test', () => {
                 const headerSubmit = $element.text()
                 expect($element).to.have.text(demoFixture.thanksSubmitForm)
             })
+        })
+
+        it('Web tables - Validate Age ', () => {
+            cy.Webtables()
+            demoSelector.tableTitle().should('have.text', demoFixture.webTableTitle)
+            demoSelector.webtable().each(()=>{
+                demoSelector.webtable().invoke('text').then($tableElement => {
+                    const age = $tableElement
+
+                    expect(age).include(demoFixture.userFormTableData.age)
+                })
+            })
+        })
+
+        it('Add new row in the table', () => {
+            cy.Webtables()
+            cy.completeAllFormFields(demoFixture.userFormTableData)
+            demoSelector.webtable().each(()=>{
+                demoSelector.webtable().invoke('text').then($tableNewElement => {
+                    const newRowValues = $tableNewElement
+
+                    expect(newRowValues).include(demoFixture.userFormTableData.name)
+                    expect(newRowValues).include(demoFixture.userFormTableData.lastname)
+                    expect(newRowValues).include(demoFixture.userFormTableData.age)
+                    expect(newRowValues).include(demoFixture.userFormTableData.email)
+                    expect(newRowValues).include(demoFixture.userFormTableData.salary)
+                    expect(newRowValues).include(demoFixture.userFormTableData.department)
+                })
+            })
+        })
+
+        it.only('Upload test - ', () => {
+            cy.uploadFiles(demoFixture.file)
+            demoSelector.pathUploadedFile().should('be.visible')
+
+
         })
     })
 })
