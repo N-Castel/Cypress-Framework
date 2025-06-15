@@ -36,7 +36,6 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
             basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -53,8 +52,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -79,8 +77,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -103,8 +100,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -129,8 +125,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -154,8 +149,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -177,8 +171,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -200,8 +193,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
@@ -224,8 +216,7 @@ describe('Play1 Automation test', () => {
             basePlay1AutomationPage.minWaitInput().clear()
             basePlay1AutomationPage.minWaitInput().type(play1TestFixture.minWait)
             basePlay1AutomationPage.maxWaitInput().clear()
-            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(($element) => {
-                const maxinputVal = $element.text()
+            basePlay1AutomationPage.maxWaitInput().type(play1TestFixture.maxWait).then(() => {
     
             // if(play1TestFixture.maxWait < play1TestFixture.minWait){
             //     basePlay1AutomationPage.minWaitInput().clear()
