@@ -5,6 +5,7 @@
         "newTodoTest": "test1",
         "ItemsList3label": "3 items left",
         "ItemsList2Label": "2 items left",
-        "completedClass": "completed"
+        "completedClass": "completed",
+        "TodosTitle": "todos"
     }
 ]

@@ -80,7 +80,7 @@ describe('demoQA Test', () => {
         it('Add new row in the table', () => {
             cy.Webtables()
             cy.completeAllFormFields(demoFixture.userFormTableData)
-            demoSelector.webtable().each(()=>{
+            // demoSelector.webtable().each(()=>{
                 demoSelector.webtable().invoke('text').then($tableNewElement => {
                     const newRowValues = $tableNewElement
 
@@ -91,14 +91,18 @@ describe('demoQA Test', () => {
                     expect(newRowValues).include(demoFixture.userFormTableData.salary)
                     expect(newRowValues).include(demoFixture.userFormTableData.department)
                 })
-            })
+            // })
         })
 
-        it.only('Upload test - ', () => {
+        it('Upload test - ', () => {
             cy.uploadFiles(demoFixture.file)
             demoSelector.pathUploadedFile().should('be.visible')
+        })
 
-
+        it('Intercept', () => {
+            cy.visit('https://rickandmortyapi.com')
+            cy.intercept('GET', '/api/character', {fixture: '10-demo/rickMorty.json'})
+            cy.log('test')
         })
     })
 })

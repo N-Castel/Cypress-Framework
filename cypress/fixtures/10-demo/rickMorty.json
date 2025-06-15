@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Test Intercept",
+        "status": "testinT",
+        "species": "HumaniNTERCEPT",
+        "type": "INTERCEPTYPE",
+        "gender": "MalTERCEPT",
+        "origin": {
+            "name": "Earth (C-137) INTERCEPT",
+            "url": "https://rickandmortyapi.com/api/location/1/INTERCEPT"
+        }
+    }
+]

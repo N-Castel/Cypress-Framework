@@ -12,7 +12,7 @@ describe('To Do Test ', () => {
     todos.forEach(todos => {
 
         it('validate Title', () => {
-            baseTodoPage.titleToDo().should('have.css', 'color', 'rgb(184, 63, 69)').and('have.text', 'todos')
+            baseTodoPage.titleToDo().should('have.css', 'color', 'rgb(184, 63, 69)').and('have.text', todos.TodosTitle)
         })
 
         it('validdate default todo', () => {
@@ -42,6 +42,15 @@ describe('To Do Test ', () => {
             baseTodoPage.newToDoTestLocator().should('be.visible')
             baseTodoPage.newToDoTestLocator().should('have.text', todos.newTodoTest)
             
+        })
+
+        it('Validate default TODOS', () => {
+            cy.get('.todo-list li').should('have.length', 2).and('contain', todos.todo1).and('contain', todos.todo2)
+        })
+
+        it('Intercept', () => {
+            cy.intercept('GET', '/todo#', {fixture: '9-todo/intercept.json'})
+            cy.log('test')
         })
     })
 
