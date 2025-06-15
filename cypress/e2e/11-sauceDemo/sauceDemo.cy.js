@@ -10,7 +10,7 @@ describe('SauceDemo login', () => {
     })
 
     sauceFixture.forEach(sauceFixture => {
-        it('Sucess Login', () => {
+        it('Success Login', () => {
             seleSauceDemo.userNameInput().type(sauceFixture.username)
             seleSauceDemo.passwordInput().type(sauceFixture.password)
             seleSauceDemo.loginButton().click()
