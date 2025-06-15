@@ -25,9 +25,12 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import selectDemoQA from "../selector/10-demo/selectorDemo"
+import selectorSauceDemo from "../selector/11-sauceDemo/sauceDemoSelector"
 import 'cypress-file-upload'
 
 const selectorDemoQA = new selectDemoQA
+
+const selectSauceDemo = new selectorSauceDemo
 
 //Visit demoQA Website
 
@@ -150,4 +153,3 @@ Cypress.Commands.add('uploadFiles', (file) => {
     selectorDemoQA.uploadDownloadButton().click()
     selectorDemoQA.uploadButton().attachFile(file)
 })
-

@@ -1,0 +1,20 @@
+[
+    {
+        "title1": "ok",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "span": "Products"
+    },
+    {
+        "title1": "incorrect username ",
+        "username": "usertest",
+        "password": "secret_sauce",
+        "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+        "title1": "incorrect password",
+        "username": "standard_user",
+        "password": "pass test",
+        "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    }
+]
