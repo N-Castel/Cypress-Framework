@@ -10,7 +10,7 @@ describe('SauceDemo login', () => {
     })
 
     sauceFixture.forEach(sauceFixture => {
-        it('Success Login', () => {
+        it('Validations for Login', () => {
             cy.sauceDemoLogin()
 
             // if(sauceFixture.title1 === 'ok'){
