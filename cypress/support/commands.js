@@ -153,3 +153,11 @@ Cypress.Commands.add('uploadFiles', (file) => {
     selectorDemoQA.uploadDownloadButton().click()
     selectorDemoQA.uploadButton().attachFile(file)
 })
+
+// sauceDemolOGIN 
+
+Cypress.Commands.add('sauceDemoLogin', (dataFixture) => {
+    selectSauceDemo.userNameInput().type(dataFixture.username)
+    selectSauceDemo.passwordInput().type(dataFixture.password)
+    selectSauceDemo.loginButton().click()
+})

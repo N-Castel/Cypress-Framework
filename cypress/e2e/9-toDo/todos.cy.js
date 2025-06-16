@@ -5,8 +5,9 @@ const baseTodoPage = new selectorToDoTodo
 
 describe('To Do Test ', () => {
 
-    beforeEach(()=> {
-        baseTodoPage.navigationtoDos()
+    beforeEach(function() {
+        baseTodoPage.navigationtoDos().as('requestToDo')
+        //  cy.request('https://example.cypress.io/todo#/').as('requestToDo')
     })
 
     todos.forEach(todos => {
@@ -48,10 +49,44 @@ describe('To Do Test ', () => {
             cy.get('.todo-list li').should('have.length', 2).and('contain', todos.todo1).and('contain', todos.todo2)
         })
 
-        it('Intercept', () => {
-            cy.intercept('GET', '/todo#', {fixture: '9-todo/intercept.json'})
-            cy.log('test')
-        })
+        // it.only('Intercept', () => {
+        //     cy.get('@requestToDo')
+        //     cy.intercept('GET', '/todo#', {fixture: '9-todo/intercept.json'})
+        //     cy.log('test')
+        // })
+
+        // it.only('Request test - Body', () =>  {
+        //     cy.get('@requestToDo')
+        //     .its('body').should('exist')
+        // })
+
+        // it.only('Request test - Status', () =>  {
+        //     cy.get('@requestToDo')
+        //     .its('status').should('eq',200)
+        // })
+
+        // it.only('Request test - Content type', () =>  {
+        //     cy.get('@requestToDo')
+        //     .its('headers')
+        //     .its('content-type')
+        //     .should('include', 'text/html')
+        //     .should('include', 'charset=utf-8')
+        // })
+
+        // it('Request test - Body with 2 objects (2 toDos)', () =>  {
+        //     cy.get('@requestToDo')
+        //     .its('headers')
+        //     .its('content-type')
+        //     .should('deep.eq', todos.bodyObjects)
+        // })
+
+        // it('Json schema Validation', () => {
+        //     cy.get('@requestToDo')
+        //     .its('body')
+        //     .each($object => {
+        //         expect($object).to.have.all.keys(todos.bodyObjects)
+        //     })
+        // })
     })
 
     afterEach(() => {

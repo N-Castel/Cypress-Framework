@@ -11,9 +11,7 @@ describe('SauceDemo login', () => {
 
     sauceFixture.forEach(sauceFixture => {
         it('Success Login', () => {
-            seleSauceDemo.userNameInput().type(sauceFixture.username)
-            seleSauceDemo.passwordInput().type(sauceFixture.password)
-            seleSauceDemo.loginButton().click()
+            cy.sauceDemoLogin()
 
             // if(sauceFixture.title1 === 'ok'){
             //     seleSauceDemo.productsTitle().should('have.text', sauceFixture.span)

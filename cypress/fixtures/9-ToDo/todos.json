@@ -6,6 +6,19 @@
         "ItemsList3label": "3 items left",
         "ItemsList2Label": "2 items left",
         "completedClass": "completed",
-        "TodosTitle": "todos"
+        "TodosTitle": "todos",
+
+        "bodyObjects": [       
+            {
+                "title": "Pay electric bill",
+                "completed": true, 
+                "id": "1"
+            },
+            {
+                "title": "Walk the dog",
+                "completed": false, 
+                "id": "2"
+            }
+        ]
     }
 ]
