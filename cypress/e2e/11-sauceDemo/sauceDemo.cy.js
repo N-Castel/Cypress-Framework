@@ -21,7 +21,5 @@ describe('SauceDemo login', () => {
 
             sauceFixture.successLogin == 'ok' ? seleSauceDemo.productsTitle().should('have.text', sauceFixture.span) : seleSauceDemo.errorMessage().should('have.text', sauceFixture.errorMessage)
         })
-
     })
-
 })
