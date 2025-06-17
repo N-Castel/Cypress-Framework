@@ -1,5 +1,5 @@
-import rickMortyFixture from "../../fixtures/12-RickmortyFixture/rickMortyFixture.json"
-import interceptRickMorty from "../../fixtures/12-RickmortyFixture/interceptAPI.json"
+import rickMortyFixture from "../../fixtures/12-rickMortyFixture/rickMortyFixture.json"
+import interceptRickMorty from "../../fixtures/12-rickmortyFixture/interceptAPI.json"
 
 describe('API Testing', () => {
 
@@ -14,7 +14,7 @@ describe('API Testing', () => {
         })
 
         it.only('API - Validate lenght Character', () => {
-            cy.request('GET', 'https://rickandmortyapi.com/api/character')
+            cy.request('GET', rickMortyFixture.endpointAddRickMorty)
             .its('body')
             .its('info')
             .its('count')
@@ -31,11 +31,11 @@ describe('API Testing', () => {
         })
 
         it('API - update existing ToDo', () => {
-            cy.updateAPI(rickMortyFixture.endpointExistingCharacter, rickMortyFixture.character2)
+            cy.updateAPI(rickMortyFixture.endpointExistingCharacter, rickMortyFixture.character3)
 
             cy.request('GET', `${rickMortyFixture.endpointAddRickMorty}${rickMortyFixture.character3.id}`)
             .its('body')
-            .should('deep.eq', patchObjectKeys)
+            .should('deep.eq', rickMortyFixture.character3)
         })
 
         it('API - delete existing ToDo', () => {

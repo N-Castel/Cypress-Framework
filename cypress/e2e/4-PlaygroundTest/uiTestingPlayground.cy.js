@@ -13,7 +13,6 @@ describe('UI Test Autoation Playground', () => {
 
     playGroundFixture.forEach(playGroundFixture => {
 
-    
         it('Dynamic ID', () => {
             playGroundPage.dynamicIDHomeButton().should('have.text', playGroundFixture.dynamicIdLabel)
             playGroundPage.dynamicIDHomeButton().click()
