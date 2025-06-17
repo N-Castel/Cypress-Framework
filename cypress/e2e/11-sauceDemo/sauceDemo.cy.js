@@ -11,7 +11,7 @@ describe('SauceDemo login', () => {
 
     sauceFixture.forEach(sauceFixture => {
         it('Validations for Login', () => {
-            cy.sauceDemoLogin()
+            cy.sauceDemoLogin(sauceFixture)
 
             // if(sauceFixture.title1 === 'ok'){
             //     seleSauceDemo.productsTitle().should('have.text', sauceFixture.span)

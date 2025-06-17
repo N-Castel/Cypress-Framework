@@ -161,3 +161,17 @@ Cypress.Commands.add('sauceDemoLogin', (dataFixture) => {
     selectSauceDemo.passwordInput().type(dataFixture.password)
     selectSauceDemo.loginButton().click()
 })
+
+// navigate endpoint
+
+Cypress.Commands.add('addAPI', (endpoint, object) => {
+    cy.request('POST', endpoint, object)
+})
+
+Cypress.Commands.add('updateAPI', (endpoint, object, id) => {
+    cy.request('PATCH', endpoint, object)
+})
+
+Cypress.Commands.add('deleteAPI', () => {
+    cy.request('DELETE', endpointForDeleted)
+})

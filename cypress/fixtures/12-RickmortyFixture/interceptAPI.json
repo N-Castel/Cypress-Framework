@@ -1,0 +1,26 @@
+[
+    {
+        "characterIntercept": {
+                "id": "3000",
+                "name": "Test API RickMorty Intercept",
+                "status": "Dead Test API Intercept",
+                "species": "Human Test API Intercept",
+                "type": "Superhuman test API Intercept",
+                "gender": "Male Test API Intercept",
+                "origin": {
+                  "name": "unknown TEST Api Intercept",
+                  "url": ""
+                },
+                "location": {
+                  "name": "Worldender's lair Test API Intercept",
+                  "url": "https://rickandmortyapi.com/api/location/4"
+                },
+                "image": "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+                "episode": [
+                  "https://rickandmortyapi.com/api/episode/25"
+                ],
+                "url": "https://rickandmortyapi.com/api/character/10",
+                "created": "2000-12-12T22:22:22.017Z"
+            }
+    }
+]

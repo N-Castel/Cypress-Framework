@@ -7,7 +7,6 @@ describe('To Do Test ', () => {
 
     beforeEach(function() {
         baseTodoPage.navigationtoDos().as('requestToDo')
-        //  cy.request('https://example.cypress.io/todo#/').as('requestToDo')
     })
 
     todos.forEach(todos => {
@@ -87,17 +86,17 @@ describe('To Do Test ', () => {
         //         expect($object).to.have.all.keys(todos.bodyObjects)
         //     })
         // })
-    })
 
-    afterEach(() => {
-        baseTodoPage.doubleClickLabel().should('be.visible')
-        baseTodoPage.allItemList().then($listElement => {
-            if($listElement.length >= 3){
-                cy.log('tengo ' + $listElement.length)
-                for(let i = 3; i > $listElement.length; i++){
-                    baseTodoPage.delete3ItemlistCheck().click()
-                } 
-            }
+        afterEach(() => {
+            baseTodoPage.doubleClickLabel().should('be.visible')
+            baseTodoPage.allItemList().then($listElement => {
+                if($listElement.length >= 3){
+                    cy.log('tengo ' + $listElement.length)
+                    for(let i = 3; i > $listElement.length; i++){
+                        baseTodoPage.delete3ItemlistCheck().click()
+                    } 
+                }
+            })
         })     
     })
 })
