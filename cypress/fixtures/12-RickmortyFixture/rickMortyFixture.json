@@ -68,6 +68,8 @@
             },
 
         "endpointAddRickMorty": "https://rickandmortyapi.com/api/character",
-        "endpointExistingCharacter": "https://rickandmortyapi.com/api/character/3000"
+        "endpointExistingCharacter": "https://rickandmortyapi.com/api/character/3000",
+
+        "path": "cypress/fixtures/12-rickMortyFixture/writeFile.json"
     }
 ]

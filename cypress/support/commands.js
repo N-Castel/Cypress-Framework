@@ -26,6 +26,7 @@
 
 import selectDemoQA from "../selector/10-demo/selectorDemo"
 import selectorSauceDemo from "../selector/11-sauceDemo/sauceDemoSelector"
+import { parseNdjson } from "./utils/parseNdjson"
 import 'cypress-file-upload'
 
 const selectorDemoQA = new selectDemoQA
@@ -175,3 +176,5 @@ Cypress.Commands.add('updateAPI', (endpoint, object, id) => {
 Cypress.Commands.add('deleteAPI', () => {
     cy.request('DELETE', endpointForDeleted)
 })
+
+Cypress.Commands.add('parseNdjson', parseNdjson)
