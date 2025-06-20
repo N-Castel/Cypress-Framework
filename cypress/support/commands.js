@@ -165,6 +165,10 @@ Cypress.Commands.add('sauceDemoLogin', (dataFixture) => {
 
 // navigate endpoint
 
+Cypress.Commands.add('getAPI', (endpoint) => {
+    cy.request('GET', endpoint)
+})
+
 Cypress.Commands.add('addAPI', (endpoint, object) => {
     cy.request('POST', endpoint, object)
 })
