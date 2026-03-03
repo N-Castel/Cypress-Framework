@@ -11,7 +11,7 @@ describe('demoQA Test', () => {
 
     demoFixture.forEach(demoFixture => {
         
-        it('Validate fields color after click Submit', () => {
+        it('Validate fields border color after click Submit', () => {
             demoSelector.submitButton().click()
             demoSelector.firstNameInput().should('have.css', 'border-color', demoFixture.redColor)
             demoSelector.lastNameInput().should('have.css', 'border-color', demoFixture.redColor)

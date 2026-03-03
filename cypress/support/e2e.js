@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register'
+import 'cypress-file-upload'
 
 require('cypress-xpath')
 
@@ -25,7 +26,7 @@ module.exports = (on, config) => {
       console.log(message);
       return null;
     },
-    reporter: 'mochawesome',
+    reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
       reportDir: 'cypress/reports',
       overwrite: false,
@@ -33,5 +34,5 @@ module.exports = (on, config) => {
       json: true,
       timestamp: 'mmddyyyy_HHMMss'
     }
-  });
-};
+  })
+}
