@@ -25,7 +25,7 @@ describe('API Testing', () => {
         it('add new todo', () => {
             cy.addAPI(rickMortyFixture.endpointAddRickMorty, rickMortyFixture.character2)
 
-            cy.getAPI(`${rickMortyFixture.endpointToDo}${rickMortyFixture.character2.id}`)
+            cy.getAPI(`${rickMortyFixture.endpointAddRickMorty}${rickMortyFixture.character2.id}`)
             .its('body')
             .should('deep.eq', rickMortyFixture.character2)
         })
@@ -33,7 +33,7 @@ describe('API Testing', () => {
         it('API - update existing ToDo', () => {
             cy.updateAPI(rickMortyFixture.endpointExistingCharacter, rickMortyFixture.character3)
 
-            cy.getAPI(`${rickMortyFixture.endpointToDo}${rickMortyFixture.character2.id}`)
+            cy.getAPI(`${rickMortyFixture.endpointAddRickMorty}${rickMortyFixture.character2.id}`)
             .its('body')
             .should('deep.eq', rickMortyFixture.character3)
         })
